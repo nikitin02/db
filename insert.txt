@@ -1,0 +1,123 @@
+INSERT INTO public.delivery VALUES 
+
+(1,'CDEK', '79681933605'), 
+
+(2, 'Boxberry', '74993915622'), 
+
+(3, 'RUPOST', '88001000000'); 
+
+  
+
+INSERT INTO public.manufacturer VALUES 
+
+(1,'Samsung',188472,'79237742334'), 
+
+(2,'LG',492100,'79248831242'), 
+
+(3,'Lenovo',153234,'78929937443'), 
+
+(4,'Bosch',573823,'79274832343'), 
+
+(5,'Cold Vine', 352343,'79349235321'), 
+
+(6,'Acer', 235139, '78452935649'), 
+
+(7, 'Asus',352643, '79263924759'), 
+
+(8, 'Philips',473929,'79992736483'), 
+
+(9, 'Honor',678652,'79283942932'); 
+
+  
+
+INSERT INTO public.category VALUES 
+
+(1,'Электроника', null), 
+
+(2,'Бытовая техника', null), 
+
+(3,'Телевизоры',1), 
+
+(4,'Ноутбуки',1), 
+
+(5,'Телефоны',1), 
+
+(6,'Холодильники',2), 
+
+(7,'Винные шкафы',2), 
+
+(8,'Духовые шкафы',2), 
+
+(9,'Стиральные машины',2); 
+
+  
+
+INSERT INTO public.product VALUES 
+
+(1,'Samsung UE50AU7500UXCE', 49999, 12, 'in_stock', 3, 1), 
+
+(2,'Philips 32PHS6825', 56999, 32,'in_stock',3 , 8), 
+
+(3,'Philips 65PUS7406/60', 23999,11,'in_stock',3 , 8), 
+
+(4,'LG OLED55C1RLA', 28999, 9,'in_stock', 3, 2), 
+
+(5,'Lenovo IdeaPad 1 14IGL05', 29999, 0, 'out_of_stock', 4, 3), 
+
+(6,'Acer Aspire 5 A515-45', 41999, 23, 'in_stock', 4, 6), 
+
+(7,'ASUS Vivobook R565JA-BQ2497W', 55999, 4, 'in_stock', 4, 7), 
+
+(8, 'Samsung Galaxy A23 128GB', 18999, 13, 'in_stock', 5, 1), 
+
+(9, 'Honor X8 6/128', 25999, 3, 'in_stock', 5, 9), 
+
+(10, 'Samsung RB33A3240EL', 44599, 5, 'in_stock', 6, 1), 
+
+(11, 'LG GA-B509DQXL', 48999, 12, 'in_stock', 6, 2), 
+
+(12, 'Cold Vine C24-KSF2', 41999, 5, 'in_stock', 7, 5), 
+
+(13, 'Cold Vine C12-KBF1', 46999, 2, 'in_stock', 7, 5), 
+
+(14, 'Bosch Serie | 6 HBJ514EB0R', 39999, 0, 'out_of_stock', 8, 4), 
+
+(15, 'Bosch Serie | 4 HBF514BS0R', 43499, 5, 'in_stock', 8, 4), 
+
+(16, 'Bosch Serie | 6 HBJ314ES0R', 52399, 12, 'in_stock', 8, 4), 
+
+(17, 'LG AIDD F2V5GS0W', 42999, 17, 'in_stock',9,2), 
+
+(18, 'LG F2T3HS6W', 47999, 11, 'in_stock',9,2), 
+
+(19, 'Samsung WW65K52E69S', 54999, 4, 'in_stock',9,1); 
+
+  
+
+  
+
+INSERT INTO public.user VALUES 
+
+(1,'Иван', 'Иванов', 'Ivanov1999', '+79654567329', 'Ivty32@mail.ru', 'Санкт-Петербург'), 
+
+(2,'Игорь', 'Смирнов', 'Smirnov.I', '+79284925722', 'ismqaz01@bk.ru', 'Москва'), 
+
+(3,'Мария', 'Петрова', 'MPetrova', '+79321234567', 'Mar_35@bk.ru', 'Казань'), 
+
+(4, 'Александр', 'Журавлёв', 'Jur1993', '+79113456576', 'AlJur93@mail.ru', 'Самара'); 
+
+  
+
+  
+
+INSERT INTO public.order VALUES 
+
+(1,1,'VISA',DEFAULT,3,1,1, DEFAULT), 
+
+(2,2,'MasterCard',DEFAULT,6,2,2,DEFAULT), 
+
+(3,1,'Mir',DEFAULT,16,3,2,'completed'), 
+
+(4,3,'VISA',DEFAULT,8,4,3, DEFAULT); 
+
+ 
